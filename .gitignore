@@ -189,3 +189,7 @@ cython_debug/
 
 # PyPI configuration file
 .pypirc
+
+# models and notebooks
+notebooks/1_eda_and_rfm.ipynb
+notebooks/2_cltv_modelings.ipynb
