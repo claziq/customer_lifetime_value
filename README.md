@@ -1,61 +1,29 @@
 # customer-lifetime-value
+# Insurance CLTV Analysis: Driving Business Value from Customer Data
 
-<a target="_blank" href="https://cookiecutter-data-science.drivendata.org/">
-    <img src="https://img.shields.io/badge/CCDS-Project%20template-328F97?logo=cookiecutter" />
-</a>
+## 📝 Project Overview
+This project provides an end-to-end Exploratory Data Analysis (EDA) of insurance customer data to identify key drivers of **Customer Lifetime Value (CLTV)**. Instead of focusing solely on predictive modeling, this analysis prioritizes business intelligence, helping stakeholders understand *who* our most valuable customers are and *how* their behaviors influence long-term profitability.
 
-Predictive machine learning pipline for Customer Lifetime Value estimate.
+## 🚀 Key Business Insights
+Through deep-dive analysis, the project uncovered several critical business drivers:
 
-## Project Organization
+* **The Zero-Claim Opportunity:** Our analysis revealed a bimodal customer base. A vast majority of high-value customers have filed **zero claims**, identifying the "Low-Risk/High-Value" segment as our most profitable growth area.
+* **Income Paradox:** Interestingly, the highest average CLTV is found in moderate-income segments rather than premium-income segments, suggesting that our current product-market fit is strongest with value-conscious customers.
+* **Demographic Alignment:** Urban regions and Platinum-tier policies represent our highest volume and value, indicating that current marketing success is highly concentrated in specific regional hubs.
 
-```
-├── LICENSE            <- Open-source license if one is chosen
-├── Makefile           <- Makefile with convenience commands like `make data` or `make train`
-├── README.md          <- The top-level README for developers using this project.
-├── data
-│   ├── external       <- Data from third party sources.
-│   ├── interim        <- Intermediate data that has been transformed.
-│   ├── processed      <- The final, canonical data sets for modeling.
-│   └── raw            <- The original, immutable data dump.
-│
-├── docs               <- A default mkdocs project; see www.mkdocs.org for details
-│
-├── models             <- Trained and serialized models, model predictions, or model summaries
-│
-├── notebooks          <- Jupyter notebooks. Naming convention is a number (for ordering),
-│                         the creator's initials, and a short `-` delimited description, e.g.
-│                         `1.0-jqp-initial-data-exploration`.
-│
-├── pyproject.toml     <- Project configuration file with package metadata for 
-│                         cltv_prediction_pipeline and configuration for tools like black
-│
-├── references         <- Data dictionaries, manuals, and all other explanatory materials.
-│
-├── reports            <- Generated analysis as HTML, PDF, LaTeX, etc.
-│   └── figures        <- Generated graphics and figures to be used in reporting
-│
-├── requirements.txt   <- The requirements file for reproducing the analysis environment, e.g.
-│                         generated with `pip freeze > requirements.txt`
-│
-├── setup.cfg          <- Configuration file for flake8
-│
-└── cltv_prediction_pipeline   <- Source code for use in this project.
-    │
-    ├── __init__.py             <- Makes cltv_prediction_pipeline a Python module
-    │
-    ├── config.py               <- Store useful variables and configuration
-    │
-    ├── dataset.py              <- Scripts to download or generate data
-    │
-    ├── features.py             <- Code to create features for modeling
-    │
-    ├── modeling                
-    │   ├── __init__.py 
-    │   ├── predict.py          <- Code to run model inference with trained models          
-    │   └── train.py            <- Code to train models
-    │
-    └── plots.py                <- Code to create visualizations
-```
+## 📂 Project Structure
+To ensure reproducibility and clean navigation, the project is organized as follows:
 
---------
-
+```text
+CUSTOMER_LIT_VALUE/
+├── data/
+│   └── train_BRCpofr.csv           # Raw dataset
+├── notebooks/
+│   └── eda_and_insights.ipynb      # Main analysis "hero" notebook
+├── src/
+│   └── plotting_utils.py           # Custom visualization functions
+├── reports/
+│   └── figures/                    # Exported analysis plots
+├── .gitignore                      # Excludes raw data and scratchpad notebooks
+├── README.md                       # Project documentation
+└── requirements.txt                # Project dependencies

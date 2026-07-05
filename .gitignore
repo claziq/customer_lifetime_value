@@ -191,5 +191,5 @@ cython_debug/
 .pypirc
 
 # models and notebooks
-notebooks/1_eda_and_rfm.ipynb
+notebooks/1_eda_and_rfms.ipynb
 notebooks/2_cltv_modelings.ipynb
