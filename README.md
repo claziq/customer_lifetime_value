@@ -14,6 +14,7 @@ Through deep-dive analysis, the project uncovered several critical business driv
 ## 📂 Project Structure
 To ensure reproducibility and clean navigation, the project is organized as follows:
 
+```text
 CUSTOMER_LIT_VALUE/
 ├── data/
 │   └── train_BRCpofr.csv           # Raw dataset
